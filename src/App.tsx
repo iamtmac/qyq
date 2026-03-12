@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import profilePic from './assets/profile.jpg';
 import { 
   User, 
   Briefcase, 
@@ -199,7 +200,7 @@ export default function App() {
             >
               <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/50 relative group hover:border-emerald-500/50 transition-colors shadow-2xl hover:shadow-emerald-500/10">
                 <img 
-                  src="/profile.jpg" 
+                  src={profilePic} 
                   alt="钱胤卿" 
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
