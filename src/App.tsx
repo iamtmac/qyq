@@ -150,8 +150,12 @@ export default function App() {
       <main className="max-w-6xl mx-auto px-6 pt-32 pb-24">
         
         {/* Hero Section */}
-        <section id="home" className="mb-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <section id="home" className="mb-32 relative">
+          {/* Background Glow */}
+          <div className="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute top-1/2 -right-24 w-72 h-72 bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none" />
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center relative">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -193,14 +197,14 @@ export default function App() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/50 relative group">
+              <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/50 relative group hover:border-emerald-500/50 transition-colors shadow-2xl hover:shadow-emerald-500/10">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Profile" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  src="/profile.jpg" 
+                  alt="钱胤卿" 
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-emerald-500/10 mix-blend-overlay group-hover:opacity-0 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 
                 {/* Tech Overlay Elements */}
                 <div className="absolute bottom-4 left-4 p-3 bg-zinc-950/80 backdrop-blur border border-zinc-800 rounded-lg">
