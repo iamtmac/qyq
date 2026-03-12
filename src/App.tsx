@@ -203,10 +203,6 @@ export default function App() {
                 <div className="absolute inset-0 bg-emerald-500/10 mix-blend-overlay group-hover:opacity-0 transition-opacity" />
                 
                 {/* Tech Overlay Elements */}
-                <div className="absolute top-4 right-4 p-3 bg-zinc-950/80 backdrop-blur border border-zinc-800 rounded-lg">
-                  <div className="text-[10px] font-mono text-emerald-500 mb-1 tracking-widest uppercase">状态</div>
-                  <div className="text-xs font-bold text-zinc-100">在线节点_01</div>
-                </div>
                 <div className="absolute bottom-4 left-4 p-3 bg-zinc-950/80 backdrop-blur border border-zinc-800 rounded-lg">
                   <div className="text-[10px] font-mono text-emerald-500 mb-1 tracking-widest uppercase">职位</div>
                   <div className="text-xs font-bold text-zinc-100">解决方案架构师</div>
